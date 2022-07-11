@@ -2,9 +2,10 @@
   "name": "nodejs-sqlite-starter",
   "version": "1.0.0",
   "description": "template for quickly building node.js applications with SQLite embedded database",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/app.js",
     "test": "test"
   },
   "repository": {
@@ -27,6 +28,8 @@
   },
   "homepage": "https://github.com/infinitywarp/nodejs-sqlite-starter#readme",
   "dependencies": {
+    "better-sqlite3": "^7.6.0",
+    "cors": "^2.8.5",
     "express": "^4.18.1"
   }
 }
